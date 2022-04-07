@@ -19,9 +19,6 @@ ENV LC_ALL="C.UTF-8"
 
 WORKDIR /opt
 
-# https://help.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions#user
-USER root
-
 # Prepare entrypoint
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
